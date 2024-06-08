@@ -146,9 +146,9 @@ class WebApp(server.App):
         return result_df
 
     def getPlot(self, params):
-        global df
-        if df is None:
-            return None
+        # global df
+        # if df is None:
+        #     return None
 
         indicator = params["indicator"]
         data = self.getTable(params)
